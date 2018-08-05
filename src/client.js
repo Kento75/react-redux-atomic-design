@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import NotificationListPage from './components/pages/NotificationListPage.js';
+import App from './App';
 
 render((
-  <NotificationListPage />
+  <App />
 ), document.getElementById('app'));
