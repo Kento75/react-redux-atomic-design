@@ -1,0 +1,23 @@
+@import "../../properties.css";
+
+.list {
+  display: flex;
+  flex-direction: rows;
+  font-size: .8rem;
+}
+
+.item + .item {
+  padding: 0 0 0 2em;
+}
+
+.link {
+  color: #fff;
+  padding: calc(var(--space) * 0.5) 0;
+}
+
+.link:hover, .current {
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-width: 0 0 .1rem 0;
+  color: #fff;
+}

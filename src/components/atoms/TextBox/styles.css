@@ -1,0 +1,9 @@
+@import "../../properties.css";
+
+.textbox {
+  border: var(--border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-size: var(--font-size-s);
+  padding: var(--space);
+}

@@ -1,0 +1,32 @@
+@import "../../properties.css";
+
+.root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body > :nth-child(2) {
+  order: -1;
+}
+
+@media (--breakpoint-s) {
+  .body {
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .body > :nth-child(2),
+  .body > :last-child {
+    flex: 0 0 12em;
+  }
+
+  .body > :first-child {
+    flex: 1;
+  }
+}

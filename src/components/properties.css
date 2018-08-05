@@ -1,0 +1,86 @@
+:root {
+
+  /* ***** バリュー（値）層 ***** */
+  
+  /* 色：色相名とカラーコードの紐づけ */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #8c8c8c;
+  --color-gray-dk: #1a1a1a; /* dk = dark */
+  --color-gray-lt: #ddd; /* lt = light */
+  --color-gray-p: #f6f6f6; /* p = pale */
+  --color-green: #51c300;
+  --color-red: #f0163a;
+
+  /* ***** ブランディング層 ***** */
+
+  /* 色：色の意味などをサービス全体で統一 */
+  --color-base: var(--color-white);
+  --color-link: var(--color-green);
+  --color-link-visited: none;
+  --color-link-hover: none;
+  --color-link-active: none;
+  --color-success: none;
+  --color-danger: none;
+  --color-warning: var(--color-red);
+  --color-info: var(--color-gray);
+  --color-primary: var(--color-green);
+  --color-secondary: none;
+  --color-accent: none;
+  --color-selected: var(--color-gray-p);
+
+  /* ***** メディア（媒体）層 ***** */
+
+  /* 色：媒体固有で使用する色 */
+  --color-text: var(--color-black);
+  --color-text-outlined: var(--color-white);
+  --color-tip: var(--color-gray-dk);
+  --color-line: var(--color-gray-lt);
+  --color-info-layer1: var(--color-gray-p);
+  --color-info-layer2: var(--color-white);
+  --color-header: var(--color-black);
+  --color-card: var(--color-white);
+  --color-card-header: var(--color-black);
+
+  /* 文字：サイズ（媒体に最適化した文字サイズ） */
+  --font-size-xxs: none;
+  --font-size-xs: .6rem;
+  --font-size-s: .8rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.2rem;
+  --font-size-xl: 1.4rem;
+  --font-size-xxl: 1.6rem;
+  --font-size-xxxl: 1.8rem;
+  --font-size-xxxxl: 2.0rem;
+
+  /* 文字：太さ（媒体に最適化した文字の太さ） */
+  --font-weight-default: 400;
+  --font-weight-bold: 700;
+
+  /* 余白（媒体に最適化した余白単位） */
+  --space: .5rem;
+
+  /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
+  --line-width: 1px;
+  --line-style: solid;
+  --radius: 2px;
+  --border: var(--line-width) var(--line-style) var(--color-line);
+
+  /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
+  --hover-feedback-opacity: .7;
+
+  /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
+  --hover-animation-duration: .1s;
+  --hover-animation-timing: ease-out;
+  --hover-animation: var(--hover-animation-duration) var(--hover-animation-timing);
+  --fade-animation-duration: .2s;
+  --fade-animation-timing: linear;
+  --fade-animation: var(--fade-animation-duration) var(--fade-animation-timing);
+  
+  /* Z 座標の管理（Web 媒体／CSS では Z 座標を管理する） */
+  --z-header: 10;
+
+  /* レスポンシブ・デザイン用のカスタム・メディア（Web ブラウザ用） */
+  @custom-media --breakpoint-s (min-width: 768px);
+
+}

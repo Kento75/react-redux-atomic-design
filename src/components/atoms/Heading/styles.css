@@ -1,0 +1,22 @@
+@import "../../properties.css";
+
+.h {
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+}
+
+.h1 { font-size: var(--font-size-xxxxl); }
+.h2 { font-size: var(--font-size-xxxl); }
+.h3 { font-size: var(--font-size-xxl); }
+.h4 { font-size: var(--font-size-xl); }
+.h5 { font-size: var(--font-size-l); }
+.h6 { font-size: var(--font-size-m); }
+
+.underlined {
+  border-bottom: var(--border);
+  padding-bottom: var(--space);
+}
+
+.outlined {
+  color: var(--color-text-outlined);
+}

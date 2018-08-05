@@ -1,0 +1,9 @@
+@import "../../properties.css";
+
+.item:hover {
+  background-color: var(--color-selected);
+}
+
+.item + .item {
+  border-top: var(--border);
+}

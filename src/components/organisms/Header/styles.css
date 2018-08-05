@@ -1,0 +1,7 @@
+@import "../../properties.css";
+
+.root {
+  background-color: var(--color-header);
+  color: var(--color-text-outlined);
+  padding: calc(var(--space) * 2);
+}

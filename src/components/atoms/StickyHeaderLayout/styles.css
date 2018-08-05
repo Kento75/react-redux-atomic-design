@@ -1,0 +1,11 @@
+@import "../../properties.css";
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: var(--z-header);
+}
+
+.body {
+  min-height: 100vh;
+}

@@ -1,0 +1,26 @@
+@import "../../properties.css";
+
+.root {
+  padding: calc(var(--space) * 2);
+  position: relative;
+}
+
+.media {
+  padding-right: calc(var(--space) * 2);
+}
+
+.time {
+  margin-top: var(--space);
+}
+
+.del {
+  display: none !important;
+  position: absolute !important;
+  right: calc(var(--space) * 3) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.root:hover .del {
+  display: inline-block !important;
+}

@@ -1,0 +1,25 @@
+@import "../../properties.css";
+
+.balloon {
+  background-color: var(--color-tip);
+  border-radius: var(--radius);
+  color: var(--color-text-outlined);
+  display: inline-block;
+  font-size: var(--font-size-s);
+  padding: 0.4rem 0.5rem;
+  position: relative;
+}
+
+.balloon::after {
+  border-color: var(--color-tip) transparent transparent transparent;
+  border-style: solid;
+  border-width: 3px 3px 0 3px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 100%);
+  width: 0;
+}

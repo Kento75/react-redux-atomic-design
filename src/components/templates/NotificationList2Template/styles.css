@@ -1,0 +1,36 @@
+@import "../../properties.css";
+
+.root {
+  background-color: var(--color-info-layer1);
+}
+
+.header {
+  margin-bottom: calc(var(--space) * 4) !important;
+}
+
+.footer {
+  padding-bottom: calc(var(--space) * 4) !important;
+  padding-top: calc(var(--space) * 4) !important;
+}
+
+.main {
+  padding: calc(var(--space) * 2) calc(var(--space) * 4) !important;
+  margin-bottom: calc(var(--space) * 2) !important;
+}
+
+.nav {
+  margin-bottom: calc(var(--space) * 2) !important;
+  padding-left: calc(var(--space) * 2) !important;
+  padding-right: calc(var(--space) * 2) !important;
+}
+
+@media (--breakpoint-s) {
+  .main {
+    margin-bottom: 0 !important;
+  }
+
+  .aside {
+    padding-left: calc(var(--space) * 2) !important;
+    padding-right: calc(var(--space) * 2) !important;
+  }
+}

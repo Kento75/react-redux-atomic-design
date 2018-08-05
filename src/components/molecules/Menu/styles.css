@@ -1,0 +1,17 @@
+@import "../../properties.css";
+
+.list {
+  margin-top: calc(var(--space) * -1);
+  margin-left: calc(var(--space) * -3);
+  margin-right: calc(var(--space) * -3);
+}
+
+.link {
+  display: block;
+  padding: var(--space) calc(var(--space) * 3);
+  font-weight: 700;
+}
+
+.link:hover {
+  background-color: var(--color-info-layer1);
+}

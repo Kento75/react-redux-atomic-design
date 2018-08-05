@@ -1,0 +1,5 @@
+@import "../../properties.css";
+
+.root {
+  padding: calc(var(--space) * 2);
+}

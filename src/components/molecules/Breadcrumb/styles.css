@@ -1,0 +1,22 @@
+@import "../../properties.css";
+
+.root {
+  display: flex;
+}
+
+.item {
+  font-size: var(--font-size-s);
+}
+
+.item + .item {
+  margin-left: calc(var(--space) * 3);
+  position: relative;
+}
+
+.item + .item::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: -1em;
+  transform: translateY(-50%);
+}

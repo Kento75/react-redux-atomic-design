@@ -1,0 +1,58 @@
+{
+  "id": "gihyo_ui_component",
+  "viewports": [
+    {
+      "name": "tablet",
+      "width": 568,
+      "height": 1024
+    },
+    {
+      "label": "pc",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "Balloon 4文字ラベル",
+      "url": "http://localhost:9001/iframe.html?selectedKind=Balloon&selectedStory=4文字ラベル",
+      "misMatchThreshold": 0.0000000001
+    },
+    {
+      "label": "Notification",
+      "url": "http://localhost:9001/iframe.html?selectedKind=Notification&selectedStory=デフォルト",
+      "misMatchThreshold": 0.0000000001
+    },
+    {
+      "label": "NotificationList",
+      "url": "http://localhost:9001/iframe.html?selectedKind=NotificationList&selectedStory=デフォルト",
+      "misMatchThreshold": 0.0000000001
+    },
+    {
+      "label": "NotificationList2Template",
+      "url": "http://localhost:9001/iframe.html?selectedKind=NotificationList2Template&selectedStory=デフォルト",
+      "misMatchThreshold": 0.0000000001
+    },
+    {
+      "label": "MailAuthForm",
+      "url": "http://localhost:9001/iframe.html?selectedKind=MailAuthForm&selectedStory=デフォルト",
+      "misMatchThreshold": 0.0000000001
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

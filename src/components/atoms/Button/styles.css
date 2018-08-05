@@ -1,0 +1,33 @@
+@import "../../properties.css";
+
+.button {
+  border-radius: var(--radius);
+  border-width: 0;
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+  line-height: 1;
+  padding: .8rem;
+  text-decoration: none;
+  transition: opacity var(--hover-animation);
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.default {
+  background-color: inherit;
+  border: var(--border);
+  color: var(--color-info);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-outlined);
+}
+
+.warning {
+  background-color: var(--color-warning);
+  color: var(--color-text-outlined);
+}

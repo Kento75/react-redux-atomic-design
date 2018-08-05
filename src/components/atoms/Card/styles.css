@@ -1,0 +1,12 @@
+@import "../../properties.css";
+
+.card {
+  background-color: var(--color-card);
+  padding: calc(var(--space) * 3);
+}
+
+.header {
+  background-color: var(--color-card-header);
+  margin: calc(var(--space) * -3) calc(var(--space) * -3) calc(var(--space) * 3);
+  padding: var(--space) calc(var(--space) * 3);
+}
