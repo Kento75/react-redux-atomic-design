@@ -1,13 +1,18 @@
-// TODO: あとで色々変更する
-
 import request from 'axios';
-import * as types from '../../types';
+import * as types from '../types/NotificationListPageTypes.js';
 
-export function changeSearchWord(searchWord) {
-  return {
-    type: types.CHANGE_SEARCH_WORD,
-    searchWord,
-  };
+export function change() {
+//  return {
+//    type: types.CHANGE_SEARCH_WORD,
+//    searchWord,
+//  };
+}
+
+export function deleteNotification(id) {
+//  return {
+//    type: types.CHANGE_SEARCH_WORD,
+//    searchWord,
+//  };
 }
 
 /**

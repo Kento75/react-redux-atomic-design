@@ -11,7 +11,7 @@ import { containPresenter } from '../../utils/HoC.js';
 export class NotificationContainer extends Component {
   constructor() {
     super();
-    this.onClickDelete = ::this.onClickDelete;
+    this.onClickDelete = this.onClickDelete;
   }
 
   render() {

@@ -7,10 +7,10 @@ import { bindActionCreators } from 'redux';
 import NotificationListTemplate from '../templates/NotificationListTemplate/index.js';
 
 /** Actions */
-import * as NotificationListPageAction from '../../actions/NotificationListPage/NotificationListPageActions';
+import * as NotificationListPageAction from '../../actions/NotificationListPageActions';
 
 
-export default class NotificationListPage extends Component {
+class NotificationListPage extends Component {
   constructor(props) {
     super(props);
     /** ActionBinds */
@@ -21,7 +21,7 @@ export default class NotificationListPage extends Component {
   handleOnChange(e) {
     const { NotificationListPageActionBind } = this.props;
     // 検索ボックス内の値を引数に渡す
-    NotificationListPageActionBind.changeSearchWord(e.target.value);
+    NotificationListPageActionBind.change();
   }
 
   handleOnClickDeleteNotification(e, notification) {
@@ -30,7 +30,6 @@ export default class NotificationListPage extends Component {
   }
 
   render() {
-    const { onClickDeleteNotification } = this.props;
     const { notifications, navigations, breadcrumb } = this.props;
     return (
       <NotificationListTemplate
@@ -45,15 +44,21 @@ export default class NotificationListPage extends Component {
 
 }
   NotificationListPage.propTypes = {
-    isResultDialogOpen: PropTypes.bool.isRequired,
+    notifications: PropTypes.any,
+    navigations: PropTypes.any,
+    breadcrumb: PropTypes.any,
   };
 
   function mapStateToProps(state) {
     const {
-      isResultDialogOpen,
+      notifications,
+      navigations,
+      breadcrumb,
     } = state.NotificationListPageReducer;
     return {
-      isResultDialogOpen,
+      notifications,
+      navigations,
+      breadcrumb,
     };
   }
   

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { hot } from 'react-hot-loader';
 import store from '../store';
-import { NotificationListPage } from '../pages/NotificationListPage.js';
+import { NotificationListPage } from '../components/pages/NotificationListPage.js';
 
 class Root extends Component {
   render() {
